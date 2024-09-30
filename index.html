@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="./weather.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="icon" href="./weather.svg">
+
+</head>
+
+<body>
+    <div>
+        <h1>Weather app</h1>
+        <div id="contant">
+            <div id="main">
+                <div id="inpser">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="search" id="inp" placeholder="Enter Your City">
+                </div>
+                <button onclick="get()" id="btn">GET WEATHER</button>
+            </div>
+            <video autoplay loop id="vid" ></video>
+            <div id="con2">
+                <h3 id="par">Enter your City name to get your city's Weather Details</h3>
+                <img id="myimg" src="./weather.svg">
+                <img id="icon">
+                <h2 id="city"></h2>
+                <h2 id="disc"></h2>
+                <h4 id="temp"></h4>
+                <h4 id="humidity"></h4>
+                <h4 id="windsp"></h4>
+                <h4 id="pre"></h4>
+            </div>
+        </div>
+    </div>
+    <script src="./weather.js"></script>
+</body>
+
+</html>
